@@ -1,0 +1,110 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast (Archetype 4) mixed with Performance Pro (Archetype 2)",
+  "brand": {
+    "name": "FW Worldwide",
+    "tagline": "Forward. Always.",
+    "logo_instructions": "Red square icon with white >> chevrons. Text 'FW WORLDWIDE' in Bebas Neue, colored Navy (light background) or White (dark background). Tagline 'FORWARD. ALWAYS.' in Space Mono below."
+  },
+  "colors": {
+    "primary": "#E8281A",
+    "primary_description": "Red: CTAs, buttons, accents, icon blocks",
+    "secondary": "#1C2230",
+    "secondary_description": "Deep Navy Blue: Hero backgrounds, nav, footer, section backgrounds",
+    "accent": "#F5C842",
+    "accent_description": "Signal Yellow: Highlights, badges, hover states, dividers",
+    "surface": {
+      "light": "#F5F3EE",
+      "white": "#FFFFFF",
+      "dark": "#0A0A0A"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "inverse": "#FFFFFF",
+      "muted": "#4B5563"
+    },
+    "rules": [
+      "No generic full-screen gradients. Focus on solid color blocks.",
+      "Yellow must be used sparingly as an accent.",
+      "Red is exclusively for primary actions and key focal points."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Bebas Neue, sans-serif",
+      "weight": "bold",
+      "style_rules": "All-caps feel, tight tracking (tracking-tight or tracking-tighter), leading-none for H1."
+    },
+    "body": {
+      "family": "DM Sans, sans-serif",
+      "weight": "normal",
+      "style_rules": "Clean, modern, lightweight, leading-relaxed."
+    },
+    "labels": {
+      "family": "Space Mono, monospace",
+      "weight": "normal",
+      "style_rules": "Uppercase, wide spacing (tracking-[0.2em]), used for tags, data fields, IDs."
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous spacing. Use p-8, p-12, p-16, py-24 for sections. High breathing room.",
+    "grid_system": "Bento grids or strict asymmetrical columns. E.g., 3 columns with yellow left-border for 'Why Choose Us'.",
+    "borders_and_radii": "Sharp edges or minimal rounding (rounded-none or rounded-sm). Sturdy, industrial B2B feel.",
+    "shadows": "Subtle shadows only (shadow-sm, shadow-md). Avoid soft diffuse shadows, lean towards crisp drop-shadows."
+  },
+  "motion_and_interaction": {
+    "scroll": "Smooth scroll (lenis recommended if possible, or standard CSS smooth scroll).",
+    "entrance": "Fade-in on scroll (Framer Motion).",
+    "hover_states": "Buttons shift slightly (-translate-y-1) or color transition to darker red. Navy to Red hover for service cards."
+  },
+  "media_and_images": {
+    "rules": "Use high-quality logistics photography. No childish clip art. Overlay text must have contrast.",
+    "image_urls": [
+      {
+        "category": "hero_ocean_red_ship",
+        "url": "https://images.unsplash.com/photo-1769233777331-6ffc4a449ec9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxjYXJnbyUyMHNoaXAlMjBvY2VhbiUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3Nzc5ODM3MTh8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Red cargo ship matching the brand's primary color. Ideal for the main hero section."
+      },
+      {
+        "category": "service_air",
+        "url": "https://images.unsplash.com/photo-1733932911605-00096aff8b4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwzfHxjYXJnbyUyMGFpcnBsYW5lJTIwZmx5aW5nfGVufDB8fHx8MTc3Nzk4MzcxOHww&ixlib=rb-4.1.0&q=85",
+        "description": "Large jetliner in cloudy sky for Air Freight services."
+      },
+      {
+        "category": "service_road",
+        "url": "https://images.pexels.com/photos/16300654/pexels-photo-16300654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Red semi-truck on a highway. Matches brand red."
+      },
+      {
+        "category": "service_sea",
+        "url": "https://images.unsplash.com/photo-1773831061365-95e4328cee9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxjYXJnbyUyMHNoaXAlMjBvY2VhbiUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3Nzc5ODM3MTh8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Lone cargo ship for ocean freight detail."
+      },
+      {
+        "category": "general_logistics",
+        "url": "https://images.pexels.com/photos/11935038/pexels-photo-11935038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Cargo airplane in clear sky."
+      }
+    ]
+  },
+  "components_and_tech": {
+    "icons": "Use lucide-react for standard UI icons (truck, plane, ship, anchor, package). Use react-icons/si (e.g., SiDhl, SiFedex, SiMaersk) for carrier logos.",
+    "forms": "Use Shadcn UI for the Contact Form and dropdowns.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute (e.g. data-testid='hero-cta-button')."
+  },
+  "pages_structure": {
+    "home": "Sticky navbar. Navy hero with Red CTA. Stats bar. 4 service cards alternating Red/Navy. Value-Added Services grid. 3-col Why Choose Us with Yellow borders. Carrier logo grid. Mission split panel. Red CTA banner.",
+    "services": "Hero 'OUR SERVICES'. 4 featured services. Safety section (training, tracking).",
+    "about": "Company intro, Mission/Vision, Why Choose Us, Team values.",
+    "carriers": "Grid of airline + shipping line logos.",
+    "contact": "Form with service dropdown, contact details card on Navy, Google Maps embed."
+  },
+  "instructions_to_main_agent": [
+    "Do NOT use generic rounded borders; keep the design industrial and sharp.",
+    "Implement the 'Preferred Carriers' grid using popular logistics brands from react-icons/si if actual images are unavailable.",
+    "Make sure navigation is fully accessible and responsive.",
+    "Use Framer Motion to add subtle fade-in animations on scroll.",
+    "Ensure all text over images or dark panels meets APCA/WCAG contrast ratios.",
+    "Include Bebas Neue, DM Sans, and Space Mono from Google Fonts in index.html or layout."
+  ]
+}
